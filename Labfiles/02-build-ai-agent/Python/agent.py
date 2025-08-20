@@ -50,8 +50,6 @@ def main():
         agent = agent_client.create_agent(
             model=model_deployment,
             name="data-agent",
-            display_name="My Data Analyzer",
-            description="An agent that can analyze data",
             instructions="You are an AI agent that analyzes the data in the file that has been uploaded. Use Python to calculate statistical metrics as necessary.",
             tools=code_interpreter.definitions,
             tool_resources=code_interpreter.resources,
